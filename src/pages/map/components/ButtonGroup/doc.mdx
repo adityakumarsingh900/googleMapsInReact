@@ -1,0 +1,72 @@
+---
+name: ButtonGroup
+menu: Components
+---
+
+import {Playground, Props} from 'docz'
+import {Button, Grommet} from 'grommet'
+import {Add, RestroomMen, RestroomWomen, Robot} from 'grommet-icons'
+import {BrowserRouter as Router} from 'react-router-dom'
+import ButtonGroup from './index'
+
+# ButtonGroup
+
+A ButtonGroup component that doesn't suck.
+
+## Properties
+
+<Props of={ButtonGroup} />
+
+## Basic usage
+
+<Playground>
+  <Router>
+    <Grommet>
+      <ButtonGroup
+        buttons={[
+          {
+            icon: <Add />,
+            label: 'btn1',
+          },
+          {
+            icon: <Add />,
+            label: 'btn2',
+          },
+          {
+            icon: <Add />,
+            label: 'btn3',
+          },
+        ]}
+        onChange={val => console.log(val)}
+      />
+    </Grommet>
+  </Router>
+</Playground>
+
+## Using box properties
+
+<Playground>
+  <Router>
+    <Grommet>
+      <ButtonGroup
+        buttons={[
+          {
+            icon: <RestroomMen />,
+            label: 'Male',
+          },
+          {
+            icon: <RestroomWomen />,
+            label: 'Female',
+          },
+          {
+            icon: <Robot />,
+            label: 'Other',
+          },
+        ]}
+        direction="column"
+        gap="medium"
+        onChange={val => console.log(val)}
+      />
+    </Grommet>
+  </Router>
+</Playground>

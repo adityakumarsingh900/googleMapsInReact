@@ -1,0 +1,98 @@
+---
+name: Tooltip
+menu: Components
+---
+
+import Component from 'react-component-component'
+import {Playground, Props} from 'docz'
+import {Anchor, Button, Grommet, Paragraph} from 'grommet'
+import {Home} from 'grommet-icons/icons/Home'
+import Tooltip from './index'
+
+# Tooltip
+
+A Tooltip component that doesn't suck.
+
+## Properties
+
+<Props of={Tooltip} />
+
+## Basic usage
+
+<Playground>
+  <Grommet>
+    <Tooltip content="Hi this is a tooltip">
+      <Button label="Button with tooltip" primary />
+    </Tooltip>
+  </Grommet>
+</Playground>
+
+## At left
+
+<Playground>
+  <Grommet>
+    <Tooltip content="Hi this is a tooltip" align="left">
+      <Button label="Button with tooltip" primary />
+    </Tooltip>
+  </Grommet>
+</Playground>
+
+## At top
+
+<Playground>
+  <Grommet>
+    <Tooltip content="Hi this is a tooltip" align="top">
+      <Button label="Button with tooltip" primary />
+    </Tooltip>
+  </Grommet>
+</Playground>
+
+## At bottom
+
+<Playground>
+  <Grommet>
+    <Tooltip content="Hi this is a tooltip" align="bottom">
+      <Button label="Button with tooltip" primary />
+    </Tooltip>
+  </Grommet>
+</Playground>
+
+## Inside a paragraph
+
+<Playground>
+  <Grommet>
+    <Paragraph>
+      Sunt incididunt ad dolore est occaecat ut elit ipsum fugiat reprehenderit
+      do sunt.{' '}
+      <Tooltip content="Hi this is a tooltip">
+        <Anchor>Voluptate</Anchor>
+      </Tooltip>
+      id id excepteur cillum sit consectetur. Id in cupidatat dolore laborum Lorem
+      veniam incididunt cillum nulla.
+    </Paragraph>
+  </Grommet>
+</Playground>
+
+## On a icon
+
+<Playground>
+  <Grommet>
+    <Tooltip content="Welcome to my house">
+      <Home />
+    </Tooltip>
+  </Grommet>
+</Playground>
+
+## Custom tooltip (you can use box props to modify tooltip)
+
+<Playground>
+  <Grommet>
+    <Tooltip
+      content="Welcome to my house"
+      background="light-2"
+      elevation="medium"
+    >
+      <Home />
+    </Tooltip>
+  </Grommet>
+</Playground>
