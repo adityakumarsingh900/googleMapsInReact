@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://adityakumarsingh900.github.io/ReactWithHtmlDragAndDrop",
+  "homepage": "http://adityakumarsingh900.github.io/googleMapsInReact",
   "dependencies": {
     "@googlemaps/markerclustererplus": "^1.0.3",
     "@testing-library/jest-dom": "^5.11.4",
